@@ -1,0 +1,1 @@
+fun twofer(vararg name: String) : String = "One for ${if(name.isEmpty()) "you" else name[0]}, one for me."
