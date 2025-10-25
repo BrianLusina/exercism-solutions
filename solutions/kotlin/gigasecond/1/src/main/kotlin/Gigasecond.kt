@@ -1,0 +1,8 @@
+import java.time.LocalDate
+import java.time.LocalDateTime
+
+data class Gigasecond (val initialDateTime: LocalDateTime){
+    constructor(initialDateTime: LocalDate) : this(initialDateTime.atTime(0,0))
+
+    val date = initialDateTime.plusSeconds(1000000000)
+}
